@@ -7,6 +7,6 @@ export const getVideos = async pageToken => {
     url: 'https://www.googleapis.com/youtube/v3/videos',
     params: { key: YOUTUBE_KEY, chart: 'mostPopular', part: 'snippet', maxResults: '10', regionCode: 'kr', pageToken },
   })
-  console.log(data)
+
   return data
 }
